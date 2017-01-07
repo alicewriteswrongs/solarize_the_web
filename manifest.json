@@ -1,0 +1,24 @@
+{
+  "name": "Solarize the Web",
+  "version": "0.1",
+  "short_name": "Add solarized to everything!",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["css/github.css"]
+    },
+    {
+      "matches": ["https://*.wikipedia.org/*", "https://wiki.archlinux.org/*"],
+      "css": ["css/mediawiki.css"]
+    },
+    {
+      "matches": ["https://www.google.com/*"],
+      "css": ["css/google.css"]
+    },
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "css": ["css/hackernews.css"]
+    }
+  ]
+}
